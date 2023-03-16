@@ -1,0 +1,27 @@
+from assemblyz.tools import int_to_roman
+
+
+def test_int_to_roman():
+    assert int_to_roman(1) == "I"
+    assert int_to_roman(5) == "V"
+    assert int_to_roman(9) == "IX"
+    assert int_to_roman(12) == "XII"
+    assert int_to_roman(16) == "XVI"
+    assert int_to_roman(29) == "XXIX"
+    assert int_to_roman(44) == "XLIV"
+    assert int_to_roman(45) == "XLV"
+    assert int_to_roman(68) == "LXVIII"
+    assert int_to_roman(83) == "LXXXIII"
+    assert int_to_roman(97) == "XCVII"
+    assert int_to_roman(99) == "XCIX"
+    assert int_to_roman(500) == "D"
+    assert int_to_roman(501) == "DI"
+    assert int_to_roman(649) == "DCXLIX"
+    assert int_to_roman(798) == "DCCXCVIII"
+    assert int_to_roman(891) == "DCCCXCI"
+    assert int_to_roman(1000) == "M"
+    assert int_to_roman(1004) == "MIV"
+    assert int_to_roman(1006) == "MVI"
+    assert int_to_roman(1023) == "MXXIII"
+    assert int_to_roman(2014) == "MMXIV"
+    assert int_to_roman(3999) == "MMMCMXCIX"
